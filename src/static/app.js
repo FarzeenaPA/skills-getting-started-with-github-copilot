@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Create participants list HTML
         let participantsHTML = "";
-        if (details.participants.length > 0) {
+        if (details.participants && details.participants.length > 0) {
           participantsHTML = `
             <div class="participants-section">
               <strong>Participants:</strong>
